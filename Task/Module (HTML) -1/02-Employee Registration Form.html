@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <ul style="list-style-type: disc;">
+        <li>Create employee registration webpage using HTML form objects</li>
+    </ul>
+    <form action="">
+        <table>
+            <tr>
+                <td><img src="employeelogo.jpg" alt="NO-IMG" height="45px"></td>
+                <td>
+                    <h2 style="background-color: white; color:crimson;">Employee Registration Form</h2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="radio" name="a" id="Mr.">Mr.
+                    <input type="radio" name="a" id="Mrs.">Mrs.
+                    <input type="radio" name="a" id="Ms.">Ms.
+                </td>
+            </tr>
+            <tr>
+                <td><label for="first-name">First Name:</label></td>
+                <td><input type="text" name="first-name" id="first-name" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td><label for="last-name">Last Name:</label></td>
+                <td><input type="text" name="last-name" id="last-name" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="mail-address1">Mail Address1:</label></td>
+                <td><input type="text" name="mail-address1" id="mail-address1"></td>
+            </tr>
+            <tr>
+                <td><label for="mail-address2">Mail Address2:</label></td>
+                <td><input type="text" name="mail-address2" id="mail-address2"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" name="city" id="city"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td>
+                    <select name="state" id="state">
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip:</label></td>
+                <td><input type="text" name="zip" id="zip"></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Upload Photo:</label></td>
+                <td><input type="file" name="photo" id="photo"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="text" name="mobile" id="mobile" maxlength="10" placeholder="+91"></td>
+            </tr>
+            <tr>
+                <td><label for="Languages Known">Languages Known:</label></td>
+                <td colspan="2">
+                    <label><input type="checkbox" name="languages" id="gujarati" value="Gujarati"> Gujarati</label><br>
+                    <label><input type="checkbox" name="languages" id="hindi" value="Hindi"> Hindi</label><br>
+                    <label><input type="checkbox" name="languages" id="english" value="English"> English</label><br>
+                    <label><input type="checkbox" name="languages" id="marathi" value="Marathi"> Marathi</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="additional-info">Additional Information:</label></td>
+                <td><textarea name="additional-info" id="additional-info" cols="0" rows="0" placeholder="Optional"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">submit</button>
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
