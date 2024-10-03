@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* ----------------------------------------section-1-css-start--------------------------------------- */
+        .section-1 {
+            display: flex;
+        }
+        .header {
+            height: 70px;
+            width: 30%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu {
+            height: 70px;
+            width: 70%;
+            background-color: crimson;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* ----------------------------------------section-1-css-end--------------------------------------- */
+
+        /* ----------------------------------------section-2-css-start--------------------------------------- */
+        .hero {
+            height: 260px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        /* ----------------------------------------section-2-css-end--------------------------------------- */
+
+        /* ----------------------------------------section-3-css-start--------------------------------------- */
+        .section-3 {
+            display: flex;
+            justify-content: space-between;
+        } 
+
+        .main {
+            height: 180px;
+            width: 360px;
+            background: #3f3b3b;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1.title-1 {
+            height: 90px;
+            width: 270px;
+            background: #abd9d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1.title-2 {
+            height: 90px;
+            width: 270px;
+            background: #afd6af;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        /* ----------------------------------------section-3-css-end--------------------------------------- */
+
+        /* ----------------------------------------section-4-css-start--------------------------------------- */
+        .section-4 {
+            height: 80px;
+            background: #bdbd16;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* ----------------------------------------section-4-css-end--------------------------------------- */
+
+        /* ----------------------------------------media query-start--------------------------------------- */
+        @media screen and (max-width:600px) {
+        .header {
+            width: 100%;
+        }
+
+        .section-1 {
+            display: grid;
+        }
+
+        .menu {
+            height: 90px !important;
+            width: 100% !important;
+            position: static !important;
+        }
+
+        .hero {
+            height: 300px;
+        }
+
+        .section-3 {
+            width: 100%;
+            display: grid;
+            justify-content: normal;
+        }
+
+        .main {
+            width: auto;
+        }
+
+        .title {
+            display: grid !important;
+        }
+
+        h1.title-1 {
+            width: 575PX!important;
+        }
+
+        h1.title-2 {
+            width: 575PX!important;
+        }
+
+        }
+        /* ----------------------------------------media query-end--------------------------------------- */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- -----------------------section-1-start---------------------- -->
+        <div class="section-1">
+            <div class="header">
+                <h1>HEADER</h1>
+            </div>
+            <div class="menu">
+                <h1>MENU</h1>
+            </div>
+        </div>
+        <!-- -----------------------section-1-end------------------------ -->
+
+        <!-- -----------------------section-2-start---------------------- -->
+        <div class="section-2">
+            <div class="hero">
+                <h1>HERO</h1>
+            </div>
+        </div>
+        <!-- -----------------------section-2-end---------------------- -->
+
+        <!-- -----------------------section-3-start---------------------- -->
+        <div class="section-3">
+            <div class="main">
+                <h1>MAIN</h1>
+            </div>
+            <div class="title">
+                <h1 class="title-1">IMAGE</h1>
+               <h1 class="title-2">EXTRA</h1>
+            </div>
+        </div>
+        <!-- -----------------------section-3-end---------------------- -->
+
+        <!-- -----------------------section-4-start---------------------- -->
+        <div class="section-4">
+            <h1>BANNER</h1>
+        </div>
+        <!-- -----------------------section-4-end---------------------- -->
+    </div>
+</body>
+</html>

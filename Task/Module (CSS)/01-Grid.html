@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid{
+            height: auto;
+            width: 100%;
+            background-color: black;
+            display: grid;
+            margin: auto;
+            grid-template-columns: auto auto auto auto auto auto 150px;
+            grid-template-rows: 270px 270px 270px 270px;
+            gap: 13px;
+        }
+        .grid > div{
+            padding: 25px;
+            color: white;
+        }
+        .grid-sub-1{
+            grid-column: span 4 ;
+            background-image: url(./image-css/image-1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-2{
+            grid-column:span 2;
+            background-image: url(./image-css/image-2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-3{
+            grid-row: span 4;
+            font-family: serif;
+            font-size: 14px;
+            text-align: right;
+        }
+        .child-1{
+            display: grid;
+            gap: 20px;
+        }
+        .child-3{
+            margin-top: 35px;
+        }
+        ul{
+            list-style-type: none;
+            display: grid;
+            gap: 15px;
+            font-size: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .child-4{
+            margin-top: 40px;
+        }
+        i{
+            padding-left: 10px;
+        }
+        .grid-sub-4{
+            background-image: url(./image-css/image-3.webp);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-5{
+            grid-column: span 4;
+            background-image: url(./image-css/image-4.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-6{
+            background-image: url(./image-css/image-5.LF0j5JICj4qbfqQ_Oudn);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-7{
+            grid-column:span 3 ;
+            background-image: url(./image-css/image-6.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-8{
+            grid-column: span 3;
+            background-image: url(./image-css/image-7.avif);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-9{
+            grid-column: span 2;
+            background-image: url(./image-css/image-8.avif);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-10{
+            grid-column: span 2;
+            background-image: url(./image-css/image-9.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .grid-sub-11{
+            grid-column: span 2;
+            background-image: url(./image-css/image-10.avif);
+            background-position: center;
+            background-size: cover;
+        }
+        .image-hover{
+            opacity: 0.8;
+        }
+        .image-hover:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-sub-1"></div>
+        <div class="grid-sub-2"></div>
+        <div class="grid-sub-3">
+            <div class="child-1"></div>
+                <div class="child-2">SHUTTER</div>
+                <div class="child-3">
+                    <ul>
+                        <li><a href="" style="color: burlywood;">HOME</a></li>
+                        <li><a href="" style="color: white;">PHOTOS</a></li>
+                        <li><a href="" style="color: white;">BIO</a></li>
+                        <li><a href="" style="color: white;">BLOG</a></li>
+                        <li><a href="" style="color: white;">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="child-4">
+                    <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                </div>
+        </div>
+        <div class="grid-sub-4"></div>
+        <div class="grid-sub-5"></div>
+        <div class="grid-sub-6"></div>
+        <div class="grid-sub-7"></div>
+        <div class="grid-sub-8"></div>
+        <div class="grid-sub-9"></div>
+        <div class="grid-sub-10"></div>
+        <div class="grid-sub-11"></div>
+    </div>
+</body>
+</html>

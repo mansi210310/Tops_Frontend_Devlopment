@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            height: 100vh;
+            width: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        /* ---------------------child-1-css-start---------------------- */
+        .child-1{
+            height: 230px;
+            width: 300px;
+            border: 2px solid aqua;
+            background-color: aqua;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .main-box{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box1{
+            padding: 3px 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .box2{
+            padding: 3px 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .box3{
+            padding: 3px 10px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .box4{
+            padding: 3px 10px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .box5{
+            padding: 3px 10px;
+            text-align: center;
+            background-color: white;
+    
+        }
+        /* ---------------------child-1-css-end---------------------- */
+        
+        /* ---------------------child-2-css-start---------------------- */
+        .child-2{
+            height: 230px;
+            width: 200px;
+            border: 2px solid aqua;
+            background-color: aqua;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        /* ---------------------child-2-css-end---------------------- */
+
+        /* ---------------------child-3-css-start---------------------- */
+        .child-3{
+            height: 230px;
+            width: 200px;
+            border: 2px solid aqua;
+            background-color: aqua;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        /* ---------------------child-3-css-end---------------------- */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- -----------------------child-1-start------------------------- -->
+        <div class="child-1">
+            <div class="main-box">
+                <div class="box1">Smile</div>
+                <div class="box2">Laugh</div>
+                <div class="box3">Wink</div>
+                <div class="box4">Shrug</div>
+            </div>
+            <div class="box5">Blush</div>
+            <div class="heading">
+                <h6>Tacos actually microdosing, pour-over semiotics banjo <br> chicharrones retro fanny pack portiand everyday carry viny! <br> typewriter. Tacos PBR&B pork belly, everyday carry ennui <br> pickleo sriracha normcore hashtag polaroid singie-origin coffee <br>cold-pressed PBR&B tattooed trust fund twee, leggings saivia <br>iPhone photo booth health goth gastropub hammock.</h6>
+            </div>
+            <div class="sub-heading">
+                <h6>Cray food truck brunch, XOXO +1 keffiyen pickied chambray <br> waistcost annui. Oraganic amall batch paleo 8-bit. Intelligentsia <br>umarni wayfarers pickled, asymmetrical kombucha letterpress <br>kitsch leggings cold-pressed squid chartreuse put a bird on it. <br> Listicle pickled man bun cornhole heririoom art party. </h6>
+            </div>
+        </div>
+        <!-- -------------------------child-1-end--------------------------- -->
+
+        <!-- -----------------------child-2-start------------------------- -->
+        <div class="child-2">
+            <div class="heading"> 
+                <h2>Second article</h2>
+            </div>
+            <div class="sub-heading">
+                <h6>Tacos actually microdosing, pour-over <br> semiotics banjo chicharrones retro <br> fanny pack portiand everyday carry <br> viny! typewriter. Tacos PBR&B pork <br> belly, everyday carry ennui pickleo <br> sriracha normcore hashtag polaroid <br> singie-origin coffee cold-pressed <br> PBR&B tattooed trust fund twee, <br> leggings saivia iPhone photo booth <br>health goth gastropub hammock.</h6>
+            </div>
+        </div>
+        <!-- -----------------------child-2-end------------------------- -->
+
+         <!-- -----------------------child-3-start------------------------- -->
+        <div class="child-3">
+            <div class="heading">
+                <h2>First article</h2>
+            </div>
+            <div class="sub-heading">
+                <h6>Tacos actually microdosing, pour-over <br> semiotics banjo chicharrones retro <br> fanny pack portiand everyday carry <br> viny! typewriter. Tacos PBR&B pork <br> belly, everyday carry ennui pickleo <br> sriracha normcore hashtag polaroid <br> singie-origin coffee cold-pressed <br> PBR&B tattooed trust fund twee, <br> leggings saivia iPhone photo booth <br>health goth gastropub hammock.</h6>
+            </div>
+        </div>
+        <!-- -----------------------child-3-start------------------------- -->
+    </div>
+</body>
+</html>

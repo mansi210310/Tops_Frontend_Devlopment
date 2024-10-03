@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Background</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .contanier {
+      height: 100vh;
+      width: 55%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* ---------------------------------section-1-css-start------------------------------------ */
+    .section-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .section-1-title {
+      color: white;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 80px;
+      margin-left: 210px;
+    }
+
+    .section-1-sub-title-1 {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      margin-left: 70px;
+    }
+
+    .section-1-main-head-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    .heading-1 {
+      color: chocolate;
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: right;
+    }
+
+    .sub-heading-1 {
+      color: white;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: right;
+    }
+
+    .circle-1 {
+      height: 70px;
+      width: 70px;
+      color: chocolate;
+      border: 2px solid white;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    i {
+      margin-top: 25px;
+    }
+    /* ---------------------------------section-1-css-end------------------------------------ */
+
+    /* ---------------------------------section-2-css-start------------------------------------ */
+    .section-2 {
+      height: 100vh;
+      width: 45%;
+      background-image: url(./image-css/geetar.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+    /* ---------------------------------section-2-css-end------------------------------------ */
+  </style>
+</head>
+
+<body>
+
+  <div class="contanier">
+    <!-- ----------------------------section-1-start-------------------------------- -->
+    <div class="section-1">
+      <div class="section-1-title">
+        <p>OUR SERVICES |</p>
+      </div>
+      <div class="section-1-sub-title-1">
+        <div class="section-1-main-head-1">
+          <div class="heading-1">
+            <p>WEB DESIGN</p>
+          </div>
+          <div class="sub-heading-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo <br>officia veniam ipsum
+              libero porro similique.</p>
+          </div>
+        </div>
+        <div class="circle-1">
+          <div class="tv"><i class="fa-solid fa-tv"></i></div>
+        </div>
+      </div>
+
+      <div class="section-1-sub-title-1">
+        <div class="section-1-main-head-1">
+          <div class="heading-1">
+            <p>FONTS DESIGN</p>
+          </div>
+          <div class="sub-heading-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo <br>officia veniam ipsum
+              libero porro similique.</p>
+          </div>
+        </div>
+        <div class="circle-1">
+          <div class="design"><i class="fa-solid fa-print"></i></div>
+        </div>
+      </div>
+
+      <div class="section-1-sub-title-1">
+        <div class="section-1-main-head-1">
+          <div class="heading-1">
+            <p>PHOTOGRPHY</p>
+          </div>
+          <div class="sub-heading-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis explicabo <br>officia veniam ipsum
+              libero porro similique.</p>
+          </div>
+        </div>
+        <div class="circle-1">
+          <div class="camera"><i class="fa-solid fa-camera-retro"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------section-1-end-------------------------------- -->
+
+    <!-- ----------------------------section-2-start-------------------------------- -->
+    <div class="section-2"></div>
+    <!-- ----------------------------section-2-end-------------------------------- -->
+  </div>
+</body>
+
+</html>

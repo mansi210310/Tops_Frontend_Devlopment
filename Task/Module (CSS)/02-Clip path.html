@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container-1{
+            height: 100vh;
+            width: auto;
+            background-image: url(./image-css/clip\ path\ image.jpg);
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 49% 99%, 0 85%);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            gap: 70px;
+            flex-direction: column;
+        }
+        
+        /* --------------------------------section-1-css-start------------------------------ */
+        .section-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            gap: 180px;
+        }
+
+        .logo{
+            height: 30px;
+            width: 100px;
+            border: 2px solid white;
+        }
+
+        .name{
+            font-size: 25px;
+            color: white;
+            padding-left: 50px;
+            align-self: center;
+            text-align: justify;
+            text-align-last: right;
+        }
+
+        .capital{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 26px;
+            width: 35px;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            /* text-align: justify;
+            text-align-last: right; */
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            gap: 50px;
+        }
+
+        a{
+            font-size: 15px;
+            color: white;
+            font-weight: 200;
+            text-decoration: none;
+        }
+
+        .side{
+            height: 30px;
+            width: 30px;
+            color: white;
+            border: 2px solid red;
+            background-color: red;
+            border-radius: 10%;
+            /* margin-top: 100px; */
+        }
+
+        i{
+            margin-top: 20px;
+        }
+        /* --------------------------------section-1-css-end------------------------------ */
+
+        /* --------------------------------section-2-css-start------------------------------ */
+        .section-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sub-head{
+            font-size: 25px;
+            color: white;
+        }
+
+        .main-head{
+            font-size: 75px;
+            color: white;
+        }
+
+        .sub-head-2{
+            font-size: 20px;
+            color: white;
+        }
+
+        .box--{
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .box-1{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            text-align: center;
+        }
+
+        .box-2{
+            font-size: 10px;
+            color: white;
+            padding: 10px 50px;
+            text-align: center;
+            background: none;
+        }
+
+        .circle-1 {
+            height: 50px;
+            width: 50px;
+            color: chocolate;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+
+        i {
+             margin-top: 15px;
+             margin-left: 15px;
+        }
+        /* --------------------------------section-2-css-end------------------------------ */
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <!-- -------------------------section-1-start-------------------------- -->
+        <div class="section-1">
+            <div class="logo">
+                <!-- <div class="name">ogo</div> -->
+                <div class="capital">L</div>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">PORTFOUO</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">TEAM</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- <div class="side">
+                <div class="icons">
+                    <i class="fa-solid fa-greater-than"></i>
+                    <i class="fa-solid fa-less-than"></i>
+                </div>
+            </div> -->
+        </div>
+        <!-- -------------------------section-1-end-------------------------- -->
+
+        <!-- -------------------------section-2-start-------------------------- -->
+        <div class="section-2">
+            <div class="sub-head">
+                <p>Our Clients Are Our First Priority</p>
+            </div>
+            <div class="main-head">
+                <p>WELCOME TO SKY</p>
+            </div>
+            <div class="sub-head-2">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Iure officiis maxime velit omnis accusantium. <br> Vel minima praesentium enim ratione recusandae!</p>
+            </div>
+            <div class="box--">
+                <button class="box-1">
+                    <p>GET STARTED NOW</p>
+                </button>
+                <button class="box-2">
+                    <p>LEARN MORE</p>
+                </button>
+            </div>
+            <div class="circle-1">
+                <div class="icons">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------section-2-end-------------------------- -->
+    </div>
+</body>
+</html>
