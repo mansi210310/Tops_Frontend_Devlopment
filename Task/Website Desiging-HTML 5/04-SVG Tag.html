@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Tag</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .contanier{
+            height: 330px;
+            width: 680px;
+            border: 4px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-section > .section-1, .section-2, .section-3{
+            filter: drop-shadow(0 10px 5px gray);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Create some shape using SVG Tag in html</h1>
+        <div class="contanier">
+            <div class="main-section">
+
+                <div class="section-1">
+                    <svg width="200" height="170" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="150" height="150" x="10" y="10" rx="10" ry="10" style="fill:orange;stroke:black;stroke-width:5;opacity:0.5" />
+                    </svg>
+                </div>
+
+                <div class="section-2">
+                    <svg height="220" width="250" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="100,25 190,190 20,190" style="fill:yellow;stroke:purple;stroke-width:4; stroke-linejoin: round" />
+                    </svg>
+                </div>
+
+                <div class="section-3">
+                    <svg width="150" height="300" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="100" height="230" x="15" y="15" rx="15" ry="15" style="fill:palevioletred;stroke-width:4;stroke:black" />  
+                    </svg>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

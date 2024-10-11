@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tag</title>
+    <style>
+        .main-head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contanier{
+            height: 300px;
+            width: 600px;
+            border: 6px solid orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .section-2{
+            height: 120px;
+            width: 120px;
+            background-image: url(../IMAGES/pencil-image.jpeg);
+            background-position: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-head">
+        <h1>Create some shape using Canvas Tag in html</h1>
+        
+        <div class="contanier">
+            <div class="main-section">
+
+                <!-- ----------------------------Section-1-start-------------------------------- -->
+                <div class="section-1">
+                    <canvas id="myCanvas" width="120" height="150" style="border-radius: 6px">
+                    </canvas>
+                    
+                    <script>
+                    const canvas = document.getElementById("myCanvas");
+                    const ctx = canvas.getContext("2d");
+                    
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(20,20, 150,100);
+                    </script>
+                </div>
+                <!-- ----------------------------Section-1-end-------------------------------- -->
+
+
+                <!-- ----------------------------Section-2-start-------------------------------- -->
+                <div class="section-2">
+                    <canvas id="myCanvas_1">
+                    </canvas>
+                </div>
+                <!-- ----------------------------Section-2-end------------------------------- -->
+
+
+                <!-- ----------------------------Section-3-start------------------------------- -->
+                <div class="section-3">
+                    <canvas id="myCanvas_2" width="300" height="150" style="border-radius:10px">
+                    </canvas>
+                    
+                    <script>
+                    const canvas_2 = document.getElementById("myCanvas_2");
+                    const ctx_2 = canvas_2.getContext("2d");
+                    
+                    ctx_2.fillStyle = "orange";
+                    ctx_2.fillRect(25, 25, 200, 100);
+                    </script>
+                </div>
+                <!-- ----------------------------Section-3-end-------------------------------- -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
