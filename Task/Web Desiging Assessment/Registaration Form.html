@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registaration Form</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            h1{
+                font-family: Arial;
+                font-size: medium;
+                font-style: normal;
+                font-weight: bold;
+                color: brown;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            .container{
+                border-radius: 5px;
+                background-color:#f2f2f2;
+                padding: 20px;
+            }
+
+            .section:after{
+                content: "";
+                display: flex;
+                clear: both;
+            }
+
+            .label_1{
+                float: left;
+                width:10%;
+                margin-top: 6px;
+            }
+
+            .input_1{
+                float: left;
+                width: 90%;
+                margin-top: 6px;
+            }
+
+            input[type=text], 
+            input[type=email], 
+            input[type=number], 
+            input[type=select], 
+            input[type=date],
+            input[type=select],
+            input[type=password], 
+            input[type=tel]
+            {
+                width: 45%;
+                padding: 12px;
+                border: 1px solid rgb(168, 166, 166);
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            textarea{
+                width:45%;
+                padding: 12px;
+                border: 1px solid rgb(168, 166, 166);
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            input[type=radio],
+            input[type=checkbox]{
+                width: 1%;
+                padding-left: 0%;
+                border: 1px solid rgb(168, 166, 166);
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label{
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float:left;
+            }
+
+            input[type=submit]:hover {
+                background-color: #32a336;
+            }
+
+            @media screen and (max-width: 600px) {
+                .label_1,.input_1,input[type=submit]{
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+
+        </style>
+    </head>
+       
+    <body>
+        <h1>Student Registaration Form</h1>
+        <form action="">
+            <div class="container">
+                <!-------------------------- Name-HTML-Start ------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">First Name:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="text" id="fname" name="firstname" placeholder="Enter your first name" title="Name must b3-6 alphabetic characters">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Last Name:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your last name" title="Name must b3-6 alphabetic characters">
+                    </div>
+                </div>
+                <!-------------------------- Name-HTML-End ------------------------->
+
+                
+                <!------------------------- Email-HTML-Start -------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Email:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="email" id="email" name="email" placeholder="it should contain @,.">
+                    </div>
+                </div>
+                <!------------------------- Email-HTML-End -------------------------->
+
+
+                <!------------------------- Mobile-HTML-Start ------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Mobile:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="tel" id="mobile" name="mobile" placeholder="only 10 digits are allowed" maxlength="10">
+                    </div>
+                </div>
+                <!------------------------- Mobile-HTML-End ------------------------->
+
+
+                <!------------------------- Gender-HTML-Start -------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="" required>Gender:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="radio" id="male" name="gender" value="male"/>Male
+                        <input type="radio" id="female" name="gender" value="female"/>Female
+                    </div>
+                </div>
+                <!------------------------- Gender-HTML-End -------------------------->
+
+
+                <!------------------------- DOB-HTML-Start ----------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Date Of Birth:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="Date" id="dob" name="dob">
+                    </div>
+                </div>
+                <!------------------------- DOB-HTML-End ----------------------------->
+
+
+                <!------------------------ Address-HTML-Start --------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Address:</label>
+                    </div>
+                    <div class="input_1">
+                        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <!------------------------ Address-HTML-End --------------------------->
+
+
+                <!------------------------ City-HTML-Start ------------------------------>
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">City:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="text" id="city" name="city">
+                    </div>
+                </div>
+                <!------------------------ City-HTML-End ------------------------------>
+
+
+                <!------------------------ Area PIN-HTML-Start -------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Area PIN:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="number" id="pin" name="pin" title="Please enter a valid 6-digit PIN">
+                    </div>
+                </div>
+                <!------------------------ Area PIN-HTML-End -------------------------->
+
+
+                <!------------------------ State-HTML-Start ----------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">State:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="text" id="state" name="state">
+                    </div>
+                </div>
+                <!------------------------ State-HTML-End ----------------------------->
+
+
+                <!----------------------- Qualification-HTML-Start ------------------------>
+                <div class="section">
+                    <div class="label_1">
+                        <label for="" required >Qualification:</label>
+                    </div>
+                    <div class="input_1">
+                        <select name="qualification" id="qualification">
+                            <option value=" ">Select Qualification:</option>
+                            <option value="Graduation">Graduation</option>
+                            <option value="BTech.">BTech.</option>
+                            <option value="MTech.">MTech.</option>
+                            <option value="MCA">MCA</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+                </div>
+                 <!----------------------- Qualification-HTML-End ------------------------>
+
+
+                 <!------------------------ Specialization-HTML-Start --------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Specialization:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="checkbox" id="Computer Science" name="specialization" value="Computer Science">Computer Science<br/>
+                        <input type="checkbox" id="Information Technology" name="Specialization" value="Information Technology">Information Technology<br/>
+                        <input type="checkbox" id="Computer Architecture" name="specialization" value="Computer Architecture">Computer Architecture<br/>
+                        <input type="checkbox" id="Tele Communication" name="specialization" value="Tele Communication">Tele Communication<br/>
+                    </div>
+                </div>
+                <!------------------------ Specialization-HTML-End --------------------->
+
+
+                <!-------------------------- Password-HTML-Start -------------------------->
+                <div class="section">
+                    <div class="label_1">
+                        <label for="">Password:</label>
+                    </div>
+                    <div class="input_1">
+                        <input type="password" id="password" name="password">
+                    </div>
+                </div>
+                <!-------------------------- Password-HTML-End -------------------------->
+
+
+                <!------------------------- Submit-HTML-Start ----------------------------->
+                <div class="section">
+                    <input type="submit" value="Registered">
+                </div> 
+                <!------------------------- Submit-HTML-End -----------------------------> 
+            </div> 
+        </form> 
+    </body>
+</html>
