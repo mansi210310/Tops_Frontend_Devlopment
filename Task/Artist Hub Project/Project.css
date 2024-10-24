@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contanier{
+    border: 2px solid;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.section-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-size: 25px;
+}
+
+.sub-2{
+    position: absolute;
+    display: none;
+}
+
+.sub-3{
+    position: absolute;
+    display: none;
+}
+ul{
+    list-style-type: none;
+    position: absolute;
+    top: 130px;
+    display: none;
+    background-color: #333;
+}
+
+.sub-1 ul li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.sub-1-hover:hover ul{
+    display: block;
+ }
+
+.sub-2-hover:hover ul{
+    display: block;
+}
+
+.sub-3-hover:hover ul{
+    display: block;
+}
+.img:hover{
+    opacity: 1;
+}
+.img{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    opacity: 0.7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.img-1{
+    background-image: url(./Image/dancing\ image.jpg);
+}
+.img-2{
+    background-image: url(./Image/drawing\ image.jpg);
+}
+.img-3{
+    background-image: url(./Image/writer\ image.jpg);
+}
+.img-4{
+    background-image: url(./Image/room\ image.jpg);
+}
+.img-5{
+    background-image: url(./Image/music\ 1\ image.jpg);
+}
+.img-6{
+    background-image: url(./Image/photo\ 2\ image.jpg);
+}
+.img-7{
+    background-image: url(./Image/music\ image.jpg);
+}
+.img-8{
+    background-image: url(./Image/photo\ 1\ image.jpg);
+}
+.img-9{
+    background-image: url(./Image/laptop\ image.jpg);
+}
+.img-10{
+    background-image: url(./Image/printer\ image.jpg);
+}
+.img-11{
+    background-image: url(./Image/room\ 1\ image.jpg);
+}
+.img-12{
+    background-image: url(./Image/dancing\ 1\ image.jpg);
+}
+.img-sec{
+    display: flex;
+    gap: 20px;
+}
+.section-2{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 25px;
+}

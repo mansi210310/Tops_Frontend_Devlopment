@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registaration</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-contanier{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 128, 0, 0.151);
+            width: 650px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        .form{
+            display: flex;
+            align-items: center;
+            color: rgba(0, 128, 0, 0.874);
+        }
+
+        .name{
+            color: rgb(0, 128, 0);
+        }
+
+        input::placeholder{
+            color: rgba(0, 128, 0, 0.568);
+        }
+
+        input[type=BusinessName],
+        input[type=SA],
+        input[type=SAL2],
+        input[type=BP],
+        input[type=email],
+        input[type=Website],
+        input[type=Question]
+        {
+            height: 40px;
+            width: 337px;
+        }
+
+        input[type=text]
+        {
+            height: 40px;
+            width: 165px;
+        }
+        .country{
+            height: 40px;
+            width: 165px;
+        }
+
+        .boxs{
+            height: 100px;
+            width: 337px;
+        }
+        
+        button{
+            height: 50px;
+            width: 350px;
+            border: 2px solid green;
+            border-radius: 50px;
+            background-color: green;
+            color: white;
+        }
+
+        input[type=file]::file-selector-button
+        {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+        }
+
+        select{
+            color: rgba(0, 128, 0, 0.568);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-contanier">
+        <div class="name">
+            <h1>Artist Registaration Form</h1>
+        </div><br><br>
+        <form action="" class="form">
+            <div class="contanier">
+    
+                <div class="section">
+                    <div class="label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="" id="" placeholder="First">
+                        <input type="text" name="" id="" placeholder="Last">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="label">
+                        <label for="">Business Name</label>
+                    </div>
+                    <div class="input">
+                        <input type="BusinessName" name="" id="">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="label">
+                        <label for="">Address</label>
+                    </div>
+                    <div class="input">
+                        <input type="SA" name="" id="" placeholder="Street Address"><br><br>
+                        <input type="SAL2" name="" id="" placeholder="Street Address Line 2"><br><br>
+                        <input type="text" name="" id="" placeholder="City">
+                        <input type="text" name="" id="" placeholder="Region"><br><br>
+                        <input type="text" name="" id="" placeholder="Postal / Zip Code">
+                        <select name="" id="" class="country">
+                            <option value="">Country</option>
+                            <option value="">India</option>
+                            <option value="">China</option>
+                            <option value="">Pakistan</option>
+                            <option value="">Japan</option>
+                            <option value="">Iran</option>
+                            <option value="">Nepal</option>
+                            <option value="">South Korea</option>
+                            <option value="">Soudi Arabia</option>
+                            <option value="">Sri Lanka</option>
+                            <option value="">Bangladesh</option>
+                        </select>
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="leble">
+                        <label for="">Business Phone</label>
+                    </div>
+                    <div class="input">
+                        <input type="BP" name="" id="" placeholder="### ### ###" maxlength="11">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="label">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" name="" id="" placeholder="">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="leble">
+                        <label for="">Website</label>
+                    </div>
+                    <div class="input">
+                        <input type="Website" name="" id="">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="leble">
+                        <label for="">Media</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="" id="">Painting - fine art <br><br>
+                        <input type="checkbox" name="" id="">Painting - decorative <br><br>
+                        <input type="checkbox" name="" id="">Photography <br><br>
+                        <input type="checkbox" name="" id="">Leather <br><br>
+                        <input type="checkbox" name="" id="">Drawing <br><br>
+                        <input type="checkbox" name="" id="">Paper/Mixed Media <br><br>
+                        <input type="checkbox" name="" id="">Music <br><br>
+                        <input type="checkbox" name="" id="">Jewelry <br><br>
+                        <input type="checkbox" name="" id="">Pottery <br><br>
+                        <input type="checkbox" name="" id="">Ceramics <br><br>
+                        <input type="checkbox" name="" id="">Sculpture <br><br>
+                        <input type="checkbox" name="" id="">Floral <br><br>
+                        <input type="checkbox" name="" id="">Fabric – clothing <br><br>
+                        <input type="checkbox" name="" id="">Fabric – decorative <br><br>
+                        <input type="checkbox" name="" id="">Weaving (fabric/other) <br><br>
+                        <input type="checkbox" name="" id="">Metal works <br><br>
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="label">
+                        <label for="">Artwork Description</label>
+                    </div>
+                    <div class="input">
+                        <textarea name="" id="" cols="0" rows="0" class="boxs"></textarea>
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="leble">
+                        <label for="">Work Sample</label>
+                    </div>
+                    <div class="input">
+                        <input type="file" name="" id="file" placeholder="Choose files or drag here">
+                    </div>
+                </div><br>
+    
+                <div class="section">
+                    <div class="leble">
+                        <label for="">Would you be interested in doing a demonstration?</label>
+                    </div><br>
+                    <div class="input">
+                        <input type="radio" name="" id="">Yes <br><br>
+                        <input type="radio" name="" id="">No <br>
+                    </div><br>
+    
+                    <div class="section">
+                        <div class="label">
+                            <label for="">If yes, what technique or craft would you be demonstrating?</label>
+                        </div>
+                        <div class="input">
+                            <input type="Question" name="" id="">
+                        </div>
+                    </div><br>
+    
+                    <div class="section">
+                        <button type="button">REGISTER NEW ARTIST</button>
+                    </div>
+    
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
