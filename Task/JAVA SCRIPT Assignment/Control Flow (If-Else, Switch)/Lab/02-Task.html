@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <!-- Create a JavaScript program using a switch statement to display the day of theweek based on the user input (e.g., 1 for Monday, 2 for Tuesday, etc.). -->
+
+    <script>
+        let choice = parseInt(prompt("Enter choice:"))
+        switch(choice){
+            case 1: document.write('<br> Monday');
+                    break
+            case 2: document.write('<br> Tuesday');
+                    break
+            case 3: document.write('<br> Wednesday');
+                    break
+            case 4: document.write('<br> Thuresday');
+                    break  
+            default: document.write('<br> Friday, Saturday, Sunday');
+                    break   
+        }
+    </script>
+
+</body>
+</html>
