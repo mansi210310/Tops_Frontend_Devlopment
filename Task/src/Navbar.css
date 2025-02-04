@@ -1,0 +1,13 @@
+nav{
+    background-color: black;
+    padding: 15px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
