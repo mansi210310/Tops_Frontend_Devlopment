@@ -1,0 +1,16 @@
+.footer-bg-image{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./Image/fotter_image.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.back{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Image/BackHome.svg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
