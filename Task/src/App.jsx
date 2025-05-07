@@ -1,29 +1,34 @@
+import React from 'react'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './Home'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import Navbar from './Navbar'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from './About'
-import Contact from './Contact'
+import Home from './Home'
+import Dashboard from './Dashboard'
+import Sales from './Sales'
+import Training from './Training'
+import HR from './HR'
+import Accounts from './Accounts'
+import Scorecard from './Scorecard'
+import History from './History'
+import More from './More'
 
 function App() {
-
   return (
-    <>
-    <Navbar />
-    {/* <BrowserRouter> */}
-    <Routes>
-      <Route path='/home' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    {/* </BrowserRouter> */}
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Contact /> */}
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/sales" element={<Sales />} />
+        <Route path="/training" element={<Training />} />
+        <Route path="/hr" element={<HR />} />
+        <Route path="/accounts" element={<Accounts />} />
+        <Route path="/scorecard" element={<Scorecard />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/more" element={<More />} />
+      </Routes>
+    </Router>
   )
 }
 
